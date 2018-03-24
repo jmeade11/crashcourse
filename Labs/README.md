@@ -1,14 +1,27 @@
-# FEWD
-FEWD Class Materials
+# LABS
 
-### What's here?
+## HTML Boiler Plate
 
-- Class Lab Materials
-- Slides from the lectures
-- Homework Materials
-- [Wiki](https://github.com/jmeade11/FEWD/wiki)
-  - [Helpful Resources](https://github.com/jmeade11/FEWD/wiki/resources)
-  - [Tools of the Trade](https://github.com/jmeade11/FEWD/wiki#tools-of-the-trade)
-    - [Sublime Text3](https://github.com/jmeade11/FEWD/wiki/Sublime)
-    - [Emmet](https://github.com/jmeade11/FEWD/wiki/Emmet)
-  - [Games](https://github.com/jmeade11/FEWD/wiki/Games)
+    <!doctype html>
+    <html>
+      <head>
+      
+        <title> Your Page Title </title>
+        <!-- Link CSS Files Here -->
+        
+      </head>
+      <body>
+      
+      <!-- Your Page Contents Here -->
+      
+      </body>
+    </html>
+
+## LAB HTML
+Instructions:
+
+1. The background color for the page is **#fff**
+2. The color for the text reading "Nutrition Information" is **#887**
+3. The anchor tag (link) color is **#900**
+4. Bonus: The border on the page and around the image is black
+
