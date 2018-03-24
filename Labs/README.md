@@ -49,8 +49,8 @@ Instructions:
 
 Grandpa happens to be a graphic designer and has suggested that you style Grandma's recipe as follows:
 
-1. The background color for the page is **#fff**
+1. The background color for the page is **#ffe**
 2. The color for the text reading "Nutrition Information" is **#887**
 3. The anchor tag (link) color is **#900**
-4. Bonus: The border on the page and around the image is black
+4. Bonus: The border on the page is black and 5px wide and around the image is black and 1px wide
 
