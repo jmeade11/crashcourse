@@ -1,11 +1,11 @@
-# FEWD
-FEWD Class Materials
+# Code in One Day: HTML & CSS Crash Course
+Class Materials
 
 ### What's here?
 
 - Class Lab Materials
-- Slides from the lectures
-- Homework Materials
+- Class Code Along Solutions
+
 - [Wiki](https://github.com/jmeade11/FEWD/wiki)
   - [Helpful Resources](https://github.com/jmeade11/FEWD/wiki/resources)
   - [Tools of the Trade](https://github.com/jmeade11/FEWD/wiki#tools-of-the-trade)
