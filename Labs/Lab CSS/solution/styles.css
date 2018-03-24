@@ -1,0 +1,20 @@
+body {
+  background-color: #ffe;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+}
+
+a {
+  color: #900;
+}
+
+h4 {
+  color: #887;
+}
+
+img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
