@@ -54,3 +54,18 @@ Grandpa happens to be a graphic designer and has suggested that you style Grandm
 3. The anchor tag (link) color is **#900**
 4. Bonus: The border on the page is black and 5px wide and around the image is black and 1px wide
 
+## LAB IMAGES
+
+Let's add an image of some delicious cookies to our recipe.
+
+Here's a file for you to use: https://raw.githubusercontent.com/jmeade11/crashcourse/master/Labs/Lab%20HTML/cookies.jpg
+
+## LAB COLORS & UNITS OF MEASUREMENT
+
+1. Change the color of the h1 tag to **rgb(153,0,0)**
+2. Change the width of the image to **50%**
+3. Bonus: Can you figure out how to change the font used for the entire page and set it to **sans-serif**?  Hint: The property is font-family.
+
+## LAB PORTFOLIO
+
+Instructions are found in the [Lab Portfolio](https://github.com/jmeade11/crashcourse/tree/master/Labs/Lab%20Portfolio) folder.
