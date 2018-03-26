@@ -1,0 +1,14 @@
+h1 {
+  background-color: yellow;
+  color: red;
+  width: 50%;
+  font-size: 50px;
+}
+
+p {
+  width: 50%;
+}
+
+li {
+  color: blue;
+}

@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="https://ga-enterprise-production-herokuapp-com.global.ssl.fastly.net/assets/favicon-362b6546f2d0abc57e58ce80e6265e77ee1a53dd77bcf01e7e28b7a93667ec6b.ico" />
+    <title>Crash Course</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link rel="stylesheet" href="css/zenburn.css">
+
+    <link rel="stylesheet" href="css/custom.styles.css">
+
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+      <section>
+        <h1 class="title">Code in One Day:</h1>
+        <h2>HTML &amp; CSS Crash Course</h2>
+        <img src="img/ga-logo.svg" id="logo">
+      </section>
+      <section>
+        <h2 class="title">Introductions</h2>
+        <div class="hello">
+          <img src="img/hellobadge.svg">
+          <p>Jennifer</p>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">What We'll Cover</h2>
+        <ul>
+          <li>Building Web Pages with HTML &amp; CSS</li>
+          <li>How Stuff Behaves in the Weird World of the Web</li>
+          <li>Where to Go from Here</li>
+        </ul>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Primer</h2>
+      </section>
+      <section>
+        <h2 class="title">How Web Pages Work</h2>
+        <img src="img/htmlcssjs.svg" class="mh75"
+        alt="Web pages in the browser are made up of HTML (defines the structure of the page), CSS (describes how the pages should look) and Javascript (provides a way for us to add interactivity).">
+      </section>
+      <section>
+        <h2 class="title">Hypertext Markup Language</h2>
+        <div class="row">
+          <div class="col-2">
+            <img src="img/html.svg" class="mh50" alt="HTML icon">
+          </div>
+          <div class="col-2">
+            <p>HTML provides the <strong>structure</strong> for your web pages</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">Cascading Style Sheets</h2>
+        <div class="row">
+          <div class="col-2">
+            <img src="img/css.svg" class="mh50" alt="CSS icon">
+          </div>
+          <div class="col-2">
+            <p>CSS defines how the elements of the web page should look</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">Javascript</h2>
+        <div class="row">
+          <div class="col-2">
+            <img src="img/js.svg" class="mh50" alt="Javascript icon">
+          </div>
+          <div class="col-2">
+            <p>Javascript is used to add interactivity</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">History of Web Standards</h2>
+        <img src="img/timeline.svg">
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">HTML Tags &amp; CSS Selectors</h2>
+      </section>
+      <section>
+        <h2 class="title">Objectives: Part 1</h2>
+        <ul>
+          <li>Describe the anatomy of a web page and create the basic structure of a page in HTML</li>
+          <li>Apply HTML tags to web page content</li>
+          <li>Style web pages with CSS</li>
+          <li>Link external CSS files</li>
+        </ul>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">HTML Basics</h2>
+      </section>
+      <section>
+        <h2 class="title">HTML Syntax</h2>
+        <img src="img/tag-structure.svg">
+        <p class="note"><i class="flag"></i><strong>HEADS UP:</strong> Some tags only have a start tag.</p>
+      </section>
+      <section>
+        <h2 class="title">HTML Syntax</h2>
+        <img src="img/tag-attributes.svg">
+      </section>
+      <section>
+        <h2 class="title">What's up DOC?</h2>
+        <ul>
+          <li>The HTML5 doctype tells the browser to behave <strong>strictly</strong> according to the standards</li>
+          <li>Case-insensitive but conventionally written as:</li>
+        </ul>
+        <pre><code class="hljs html">
+
+  &lt;!DOCTYPE html>
+
+        </code></pre>
+      </section>
+      <section>
+        <h2 class="title">Anatomy of a Web Page</h2>
+        <p>Every HTML page has the same foundational structure</p>
+        <pre><code class="hljs html">
+  &lt;!DOCTYPE html>
+  &lt;html>
+  &lt;head>
+      <title>Your Title Here</title>
+  &lt;/head>
+  &lt;body>
+      Your Content Here
+  &lt;/body>
+  &lt;/html>
+        </code></pre>
+      </section>
+      <section>
+        <h6>Content Tags</h6>
+        <h2 class="title">Heading Tags</h2>
+        <pre><code class="hljs html">
+  &lt;h1>Largest Heading&lt;/h1>
+
+  &lt;h2> . . . &lt;/h2>
+
+  &lt;h3> . . . &lt;/h3>
+
+  &lt;h4> . . .&lt;/h4>
+
+  &lt;h5> . . . &lt;/h5>
+
+  &lt;h6>Smallest Heading&lt;/h6>
+        </code></pre>
+      </section>
+      <section>
+        <h6>Content Tags</h6>
+        <h2 class="title">Text Elements</h2>
+        <pre><code class="hljs html">
+  &lt;p>paragraph text&lt;/p>
+  &lt;code>computer code&lt;/code>
+        </code></pre>
+      </section>
+      <section>
+        <h6>Content Tags</h6>
+        <h2 class="title">Unordered list</h2>
+        <pre><code class="hljs html">
+  &lt;ul>...&lt;/ul>
+        </code></pre>
+      </section>
+      <section>
+        <h6>Content Tags</h6>
+        <h2 class="title">Unordered list item</h2>
+        <pre><code class="hljs html">
+  <ul>
+      <li>Item</li>
+      <li>Another Item</li>
+  </ul>
+        </code></pre>
+      </section>
+      <section>
+        <h6>Content Tags</h6>
+        <h2 class="title">Links</h2>
+        <pre><code class="hljs html">
+  &lt;a href="url">Link Text&lt;/a>
+        </code></pre>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">General Assembly Press Release</h3>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-lab-animated.svg">
+        <h3 class="center-h">Cookie Recipe HTML</h3>
+      </section>
+      <section>
+        <h2 class="title">Lab Setup</h2>
+        <p>https://github.com/jmeade11/crashcourse</p>
+        <ol>
+          <li>Go to the URL above</li>
+          <li>Click the green <strong>Clone or download button</strong></li>
+          <li>Click the link to Download ZIP</li>
+          <li>Uncompress the crashcourse-master.zip file and move it to your desktop</li>
+          <li>Open the crashcourse-master and navigate to the Labs folder</li>
+        </ol>
+      </section>
+      <section>
+        <h2 class="title">HTML Lab Tasks</h2>
+        <p>https://github.com/jmeade11/crashcourse/Labs</p>
+        <ol>
+          <li>In Sublime Text, choose <strong>File>Open</strong>and open the the Lab HTML folder</li>
+          <li>Click on the index.html file to open it</li>
+          <li>Add your HTML boilerplater</li>
+          <li>Copy the recipe from the online instructions and paste it in the body</li>
+          <li>Use what you've learned to add tags to the recipe</li>
+        </ol>
+      </section>
+      <section class="divider" data-background-color="#ee203b">
+        <h2 class="title">CSS Basics</h2>
+      </section>
+      <section>
+        <h2 class="title">Selectors, Properties and Values (Oh My!)</h2>
+        <pre><code class="hljs css">
+  selector {
+    property: value;
+  }
+        </code></pre>
+      </section>
+      <section>
+        <h2 class="title">CSS Selectors</h2>
+        <p>Selectors target the elements you want to style</p>
+        <ul>
+          <li>Element Tags</li>
+          <li>Classes &amp; IDs</li>
+          <li>Attributes</li>
+          <li>Pseudo Classes</li>
+          <li>Combinators</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Properties</h2>
+        <p>Properties are the styles you want to apply</p>
+        <ul>
+          <li>border</li>
+          <li>color</li>
+          <li>background-color</li>
+          <li>margin</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Values</h2>
+        <p>Properties each have a set of specific values that they can accept</p>
+        <ul>
+          <li>border has values for the width, color and style</li>
+          <li>color and background-color accept a color value</li>
+        </ul>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">CSS Basics</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b">
+        <h2 class="title">External Style Sheets</h2>
+      </section>
+      <section>
+        <h2 class="title">Linking Files</h2>
+        <pre><code class="hljs html">
+  &lt;head>
+  ...
+  &lt;link rel="stylesheet" href="css/styles.css">
+  ...
+  &lt;/head>
+        </code></pre>
+        <p class="note"><i class="flag"></i><strong>HEADS UP:</strong> No &lt;style> tags are used!</p>
+      </section>
+      <section>
+        <h2 class="title">Linking Files Relatively</h2>
+        <div class="row">
+          <div class="col-2">
+            <img src="img/folder-structure.svg" class="mh50" alt="folder structure diagram">
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>index.html &rarr; styles.css:</li>
+            </ul>
+            <pre><code class="hljs html">
+  href="css/styles.css"
+            </code></pre>
+             <ul>
+              <li>styles.css &rarr; bg.jpg:</li>
+            </ul>
+            <pre><code class="hljs html">
+  "../images/bg.jpg"
+            </code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-lab-animated.svg">
+        <h3 class="center-h">Cookie Recipe CSS</h3>
+      </section>
+      <section>
+        <h2 class="title">Lab Task</h2>
+        <p>https://github.com/jmeade11/crashcourse/</p>
+        <ol>
+          <li>Use the recipe you created in the last lab</li>
+          <li>Set the <strong>background color</strong> for the page to <strong>#FFE</strong></li>
+          <li>Change the <strong>color</strong> for the text reading "Nutrition Information" to <strong>#887</strong></li>
+          <li>Style the <strong>anchor tag</strong> (link) color as <strong>#900</strong></li>
+          <li><strong>Bonus: </strong>Add a border on the page</li>
+        </ol>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Give Yourself a Hand!</h2>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Ready, Set, Go!</h2>
+      </section>
+      <section>
+        <h2 class="title">Quick Review</h2>
+        <ul>
+          <li>Describe the different parts of an HTML page</li>
+          <li>What is the doctype used for?</li>
+          <li>What tag is used to link to an external stylesheet?</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Objectives: Part 2</h2>
+        <ul>
+          <li>Understand the CSS box model</li>
+          <li>Identify block and inline elements</li>
+          <li>Use fixed and relative units of measurement</li>
+          <li>Add colors with transparency</li>
+          <li>Add images to the page and background</li>
+        </ul>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">CSS Box Model</h2>
+      </section>
+      <section>
+        <h2 class="title">The Box Model</h2>
+        <div class="row">
+          <div class="col-2 top">
+            <h4>Box Model Standard</h4>
+            <figure>
+    <pre>
+     _______________________________________
+    |                                       |
+    |           margin (transparent)        |
+    |   _________________________________   |
+    |  |                                 |  |
+    |  |        border                   |  |
+    |  |   ___________________________   |  |
+    |  |  |                           |  |  |
+    |  |  |     padding               |  |  |
+    |  |  |   _____________________   |  |  |
+    |  |  |  |                     |  |  |  |
+    |  |  |  |  content            |  |  |  |
+    |  |  |  |_____________________|  |  |  |
+    |  |  |___________________________|  |  |
+    |  |_________________________________|  |
+    |_______________________________________|
+
+              |    element width    |
+    |               box width               |
+    </pre>
+              <figcaption><cite><a href="https://www.w3.org/TR/CSS1/#formatting-model">Cascading Style Sheets, level 1</a>, W3C Recommendation 17 Dec 1996, revised 11 Apr 2008</cite></figcaption>
+            </figure>
+          </div>
+          <div class="col-2 top">
+            <h4>Microsoft Box Model <i class="poop"></i></h4>
+            <figure>
+    <pre>
+     _______________________________________
+    |                                       |
+    |           margin (transparent)        |
+    |   _________________________________   |
+    |  |                                 |  |
+    |  |        border                   |  |
+    |  |   ___________________________   |  |
+    |  |  |                           |  |  |
+    |  |  |     padding               |  |  |
+    |  |  |   _____________________   |  |  |
+    |  |  |  |                     |  |  |  |
+    |  |  |  |  content            |  |  |  |
+    |  |  |  |_____________________|  |  |  |
+    |  |  |___________________________|  |  |
+    |  |_________________________________|  |
+    |_______________________________________|
+
+        |         element width          |
+    |               box width               |
+    </pre>
+              <figcaption>
+                <cite><a href="https://www.jefftk.com/p/the-revenge-of-the-ie-box-model">Revenge of the IE Box Model?</a></cite> Jeff Kaufman, February 18, 2012
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">Box-Model Mayhem</h2>
+        <div class="row">
+          <div class="col-2">
+            <h4 class="center">Content Box</h4>
+            <p class="center">220px</p>
+            <div class="content">content</div>
+            <p class="center">height: 100px;<br>
+            width: 100px;<br>box-sizing: content-box</p>
+          </div>
+          <div class="col-2">
+            <h4 class="center">Border Box</h4>
+            <p class="center">140px</p>
+            <div class="border"></div>
+            <p class="center">height: 100px;<br>
+            width: 100px;<br>box-sizing: border-box</p>
+          </div>
+        </div>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">CSS Box Model</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Block and Inline Elements</h2>
+      </section>
+      <section>
+        <h2 class="title">Block vs Inline Elements</h2>
+        <div class="row">
+          <div class="col-2 top">
+            <h4>Block Elements</h4>
+            <ul>
+              <li><strong><em>Block</em></strong> elements from sitting next to them</li>
+              <li>Size can be <strong>specified</strong> with height and width</li>
+              <li>Can wrap block or inline elements</li>
+            </ul>
+          </div>
+          <div class="col-2 top">
+            <h4>Inline Elements</h4>
+            <ul>
+              <li>Wrap inside  containing elements</li>
+              <li>Size is the height and width of contents only</li>
+              <li><strong><em>Should not</em></strong> wrap block elements</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">Block Example</h2>
+        <pre><code class="hljs html">
+&lt;div style="height: 100px; width: 50%;">
+  &lt;p>contents&lt;/p>
+&lt;/div>
+&lt;span>I've been blocked!&lt;/span>
+        </code></pre>
+        <div class="block-example">contents</div>
+            <p>I've been blocked!</p>
+      </section>
+      <section>
+        <h2 class="title">Inline Example</h2>
+        <pre><code class="hljs html">
+&lt;span style="height: 100px; width: 25%; background: red;">Empty&lt;/span>
+&lt;span style="height: 100px; width: 25%; background: red;">spans&lt;/span>
+&lt;span style="height: 100px; width: 25%; background: red;">disappear&lt;/span>
+&lt;span style="height: 100px; width: 25%; background: red;">&lt;/span>
+        </code></pre>
+        <span class="inline">Empty</span>
+        <span class="inline">spans</span>
+        <span class="inline">disappear</span>
+        <span class="inline"></span>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Block and Inline Elements</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Units of Measure &amp;<br>CSS Colors</h2>
+      </section>
+      <section>
+        <h2>Units of Measure</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Value</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>px</strong>:
+              </td>
+              <td>
+                A fixed (aka absolute) value in pixels
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>em</strong>:
+              </td>
+              <td>
+                Relative to the font-size of the element (2em = 2 x the size of the current font)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>rem</strong>:
+              </td>
+              <td>
+                Relative to the root element font-size
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>vh</strong>:
+              </td>
+              <td>
+                % of the viewport height (50vh = 50% of the viewport height)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>vw</strong>
+              </td>
+              <td>
+                % of the viewport width
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>vmax</strong>
+              </td>
+              <td>
+                % of viewport's larger dimension
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>vmin</strong>
+              </td>
+              <td>
+                % of viewport's smaller dimension
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>%</strong>
+              </td>
+              <td>
+                It depends <i class="poop"></i>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">* Not comprehensive.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Sizing</h3>
+      </section>
+      <section>
+        <h2 class="title">Color Values</h2>
+        <div class="row">
+          <div class="col-2">
+            <ul>
+              <li>
+                Keyword
+              </li>
+              <li>
+                RGB &amp; RGBA
+              </li>
+              <li>
+                HSL &amp; HSLA
+              </li>
+              <li>Hexadecimal</li>
+            </ul>
+            <p class="note"><i class="flag"></i><strong>Alpha channels</strong> are in values from 0 to 1, where zero is transparent and 1 is 100% opaque.
+</p>
+          </div>
+          <div class="col-2">
+            <pre><code class="hljs css">/* Keyword Syntax */
+h1 {
+  background-color: gray;
+}
+
+/* RGB & HSL Syntax */
+p {
+  color: rgba(0,0,0,1);
+  border: 2px solid hsl(0,0%,0%);
+}
+
+/* Hexadecimal Syntax */
+div {
+  background: #ff0000;
+}
+
+            </code></pre>
+          </div>
+        </div>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Colors</h3>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-lab-animated.svg">
+        <h3 class="center-h">Cookie Recipe CSS Part 2</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Working with Images</h2>
+      </section>
+      <section>
+        <h2 class="title">Adding Images to Your Page</h2>
+        <ul>
+          <li>Images can be added with the <code>&lt;img/></code> tag in HTML <strong>or</strong> in the background via CSS</li>
+          <li>Background images are design elements only and are ignored by screen-readers</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Linking Files Refresher</h2>
+        <div class="row">
+          <div class="col-2">
+            <img src="img/folder-structure.svg" class="mh50" alt="folder structure diagram">
+          </div>
+          <div class="col-2">
+            <ul>
+              <li>index.html &rarr; bg.jpg:</li>
+            </ul>
+            <pre><code class="hljs html">
+  href="images/bg.jpg"
+            </code></pre>
+             <ul>
+              <li>styles.css &rarr; bg.jpg:</li>
+            </ul>
+            <pre><code class="hljs html">
+  "../images/bg.jpg"
+            </code></pre>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="title">Content Images</h2>
+        <ul>
+          <li>The <code>&lt;img></code> tag has no closing tag</li>
+          <li>The <code>href</code> attribute links the file and is required</li>
+          <li>The <code>alt</code> attribute is used by screenreaders and for SEO</li>
+        </ul>
+        <pre><code class="hljs html">
+&lt;img href="images/dog.jpg" alt="A picture of my dogs">
+        </code></pre>
+      </section>
+      <section>
+        <h2 class="title">Background Images</h2>
+        <ul>
+          <li>
+            The <code>background-image</code> property takes a <code>url('path/to/file')</code> property
+          </li>
+          <li>
+            Control the background image with: <code>background-repeat</code>, <code>background-position</code>, <code>background-attachment</code>, <code>background-size</code>, <code>background-clip</code>, <code>background-origin</code>
+          </li>
+          <li>
+            Elements can have multiple stacked backgrounds with different properties
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Background Image Syntax</h2>
+        <pre><code class="hljs css">header {
+  background-image: url('../images/bg.jpg');
+  background-size: cover;
+}
+section { /* Multiple Backgrounds */
+  background-image: url('../images/logo.png'), url('../images/bg.jpg');
+  background-repeat: no-repeat, repeat;
+  background-position: bottom right, top left;
+}
+main { /* Shorthand Format */
+  background: url('../images/logo.png')
+              no-repeat
+              bottom right / 30%
+              fixed;
+}
+        </code></pre>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Working with Images</h3>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-lab-animated.svg">
+        <h3 class="center-h">Cookie Recipe Images</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Phew! You made it...</h2>
+        <h4>You've earned a break</h4>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Ready, Set, Go!</h2>
+      </section>
+      <section>
+        <h2 class="title">Quick Review</h2>
+        <ul>
+          <li>What is one type of color value?</li>
+          <li>What's the difference between the content-box and border-box properties?</li>
+          <li>What tag do you use to add an image to your HTML?</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Objectives: Part 3</h2>
+        <ul>
+          <li>Use classes, IDs, and combinators to apply styles</li>
+          <li>Understand how styles inherit/cascade</li>
+          <li>Describe how conflicting styles are applied</li>
+        </ul>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">CSS Classes &amp; IDs</h2>
+      </section>
+      <section>
+        <h2 class="title">Selector Types</h2>
+        <ul>
+          <li>Element Tags</li>
+          <li><strong>Classes &amp; IDs</strong></li>
+          <li>Combinators</li>
+          <li>Attributes</li>
+          <li>Pseudo Classes &amp; Pseudo Elements</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Classes &amp; IDs</h2>
+        <ul>
+          <li>
+            Classes and IDs allow us to target elements without having to use the tag as a selector
+          </li>
+          <li>
+            You can combine them with other selectors
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">IDs</h2>
+        <ul>
+          <li>An ID may only be used once on a page</li>
+          <li>An element may only have one ID</li>
+        </ul>
+        <pre><code class="hljs html">
+&lt;div id="extra-special">
+        </code></pre>
+        <pre><code class="hljs css">
+#extra-special {
+  ...
+}
+        </code></pre>
+      </section>
+      <section>
+        <h2 class="title">Classes</h2>
+        <ul>
+          <li>Classes are reusable as many times as you want</li>
+          <li>An element can have as many classes as you want</li>
+        </ul>
+        <pre><code class="hljs html">
+&lt;div class="big primary">
+        </code></pre>
+        <pre><code class="hljs css">
+.primary {
+  ...
+}
+.big {
+  ...
+}
+        </code></pre>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Using Classes &amp; IDs</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Combinators</h2>
+      </section>
+      <section>
+        <h2 class="title">Using Combinators</h2>
+        <ul>
+          <li>Descendant: space</li>
+          <li>Child: ></li>
+          <li>General Sibling: ~</li>
+          <li>Adjacent Sibling: +</li>
+        </ul>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Using CSS Combinators</h3>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Game Time! CSS Diner</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Cascading &amp; Inheritance</h2>
+      </section>
+      <section>
+        <h2 class="title">CSS Cascades</h2>
+        <ul>
+          <li>CSS properties inherit their values from their ancestors</li>
+          <li>Properties can be overridden when you provide a rule that has more specificity</li>
+          <li>Any rules that are not specifically overridden continue to be inherited</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Selector Weighting</h2>
+        <ol>
+          <li>Inline Styles (highest)</li>
+          <li>IDs</li>
+          <li>Classes &amp; Attributes</li>
+          <li>Element Tags</li>
+        </ol>
+      </section>
+      <section>
+        <h2 class="title">When Specificity Matters</h2>
+        <ul>
+          <li>Last declaration for a selector wins!</li>
+          <li>Styles added directly to an element are the last that will be rendered.</li>
+          <li>One exception is the special <code>!important</code> attribute.</li>
+          <li>The more specific the rule the more importance it is given</li>
+          <li>When there are multiple rules that contradict one another, the specificity and weighting rules are applied</li>
+        </ul>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Demystifying Cascade</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Another one done!</h2>
+        <h4>Get coffee to power through the last part!</h4>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Ready, Set, Go!</h2>
+      </section>
+      <section>
+        <h2 class="title">Quick Review</h2>
+        <ul>
+          <li>What does cascade mean?</li>
+          <li>What selector is weighted highest?</li>
+          <li>Is there any way to override a style attribute on a tag?</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Objectives: Part 4</h2>
+        <ul>
+          <li>Use floats to have more control over your layout</li>
+          <li>Be aware of more modern method for layout control</li>
+          <li>Review some helpful shorthand properties</li>
+        </ul>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">CSS Floats</h2>
+      </section>
+      <section>
+        <h2 class="title">Float Property</h2>
+        <p>The <code>float</code> property accepts the values:</p>
+        <ul>
+          <li><code>right</code></li>
+          <li><code>left</code></li>
+          <li><code>none</code> (default)</li>
+          <li><code>initial</code> (resets to the default)</li>
+          <li><code>inherit</code> (gets its value from its ancestor)</li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="title">Clear Property</h2>
+        <p>The <code>clear</code> property accepts the values:</p>
+        <ul>
+          <li><code>right</code></li>
+          <li><code>left</code></li>
+          <li><code>both</code></li>
+          <li><code>none</code> (default)</li>
+          <li><code>inherit</code> (gets its value from its ancestor)</li>
+        </ul>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-codealong-animated.svg">
+        <h3 class="center-h">Floating Elements</h3>
+      </section>
+      <section class="no-title">
+        <img src="img/ga-lab-animated.svg">
+        <h3 class="center-h">Create A Portfolio</h3>
+      </section>
+      <section class="divider" data-background-color="#ee203b" data-transition="zoom">
+        <h2 class="title">Go Do Awesome Things!</h2>
+        <p>www.linkedin.com/in/jenniferannmeade</p>
+      </section>
+    </div>
+	</div>
+
+	<script src="js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+              center: true,
+              overview: true,
+			// Optional libraries used to extend on reveal.js
+			dependencies: [
+				{ src: 'js/classList.js', condition: function() { return !document.body.classList; } },
+                  { src: 'js/lib/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                  { src: 'js/lib/notes/notes.js' },
+                  { src: 'js/lib/customcontrols/customcontrols.js' }
+              ]
+          });
+	</script>
+
+</body>
+</html>

@@ -1,12 +1,18 @@
+body {
+}
+
 img {
-  max-width: 100%;
+  height: 200px;
+  width: 200px;
 }
 
 div {
-  height: 100vh;
-  background-color:#BD1804;
-  background-image: url("../images/marketing-icon.png#E73506");
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 2em;
+  width: 2em;
+  background-color: blue;
+
 }
 
+p {
+  font-size: 2em;
+}
