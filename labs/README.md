@@ -102,7 +102,7 @@ Let's add an image of some delicious cookies to our recipe.
 2. Insert the cookie image into the page above the first heading.
 3. Set the image width to be 100% so it scales to fit the width of its container.
 
-Here's a file for you to use: https://raw.githubusercontent.com/jmeade11/crashcourse/master/Labs/Lab%20HTML/cookies.jpg
+Here's a file for you to use: https://github.com/jmeade11/crashcourse/blob/master/labs/lab4/cookies.jpg?raw=true
 
 ## LAB 5: CLASSES & IDs
 Instructions: 
