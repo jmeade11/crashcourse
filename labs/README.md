@@ -110,7 +110,7 @@ Instructions:
 1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab5 folder.
 2. The h1 is centered, but we want to also center the h4 tag that credits grandma and the paragraph with the link at the bottom of the page.
 3. Let's group each of the main areas of the recipe (ingredients, instructions, and nutrition) inside a set of section tags.
-4. Give each one a corresponding id.
+4. Give each section a corresponding id.
 
 ## LAB 6: FLOATS
 Instructions:
