@@ -17,7 +17,7 @@
       </body>
     </html>
 
-## LAB 1 HTML
+## LAB 1: HTML
 Instructions:
 
 Your Grandma wants you to publish her famous cookie recipe to the world wide web, she's typed it out for you in this .html document (she's so nice).
@@ -69,7 +69,7 @@ Probably bad for you, but who cares. MMMMMM COOKIES!!!! nom nom nom
 
 So, in case you didn't know, your grandma didn't actually make this recipe, it was altered from Open Source Recipe "http://www.opensourcefood.com/people/Amanori/recipes/mamas-recipe-the-best-chocolate-chip-cookies" so let's make sure to give credit where credit is due and add a link from your page.
 
-## LAB 2 CSS BASICS
+## LAB 2: CSS BASICS
 Instructions:
 
 Grandma wants her recipe looking good so let's add some styles:
@@ -82,7 +82,7 @@ Grandma wants her recipe looking good so let's add some styles:
 6. The body should also have its background set to oldlace, font color set to saddlebrown.
 7. **BONUS** Change the h1 to 40px and center align it.
 
-## LAB 3 MORE CSS 
+## LAB 3: MORE CSS 
 Instructions:
 
 Grandma is pretty happy, but we can do better:
@@ -93,7 +93,7 @@ Grandma is pretty happy, but we can do better:
 4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold
 5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
 
-## LAB 4 IMAGES
+## LAB 4: IMAGES
 Instructions: 
 
 Let's add an image of some delicious cookies to our recipe.
@@ -104,7 +104,7 @@ Let's add an image of some delicious cookies to our recipe.
 
 Here's a file for you to use: https://raw.githubusercontent.com/jmeade11/crashcourse/master/Labs/Lab%20HTML/cookies.jpg
 
-## LAB 5 CLASSES & IDs
+## LAB 5: CLASSES & IDs
 Instructions: 
 
 1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab5 folder.
@@ -112,7 +112,7 @@ Instructions:
 3. Let's group each of the main areas of the recipe (ingredients, instructions, and nutrition) inside a set of section tags.
 4. Give each one a corresponding id.
 
-## LAB 6 FLOATS
+## LAB 6: FLOATS
 Instructions:
 
 1. Grandma says it would be a lot easier to read the recipe if you could see both the ingredients list and instructions at the same time. Let's open up the css and html files in the lab6 folder and make her happy.
