@@ -81,21 +81,12 @@ Grandma wants her recipe looking good so let's add some styles:
 5. Add a solid, 15px wide, chocolate colored border around the body.
 6. The body should also have its background set to oldlace, font color set to saddlebrown.
 7. **BONUS** Change the h1 to 40px and center align it.
-<<<<<<< HEAD
-
-## LAB 3: MORE CSS
-Instructions:
-
-Grandma is pretty happy, but we can do better:
-
-=======
 
 ## LAB 3: MORE CSS 
 Instructions:
 
 Grandma is pretty happy, but we can do better:
 
->>>>>>> 3bb81025af42b01fff2e808b7be0d3c56ce4bfbb
 1. Grandma's recipe needs more work so open the the index.html and the styles.css files in the lab3 folder.
 2. The body needs 20px of space between the border and the text.
 3. Change the h1 font-size to 8% of the width of the smaller of the height or width of the viewport so it scales with the screen size!
@@ -103,11 +94,7 @@ Grandma is pretty happy, but we can do better:
 5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
 
 ## LAB 4: IMAGES
-<<<<<<< HEAD
 Instructions:
-=======
-Instructions: 
->>>>>>> 3bb81025af42b01fff2e808b7be0d3c56ce4bfbb
 
 Let's add an image of some delicious cookies to our recipe.
 
@@ -118,11 +105,7 @@ Let's add an image of some delicious cookies to our recipe.
 Here's a file for you to use: https://raw.githubusercontent.com/jmeade11/crashcourse/master/Labs/Lab%20HTML/cookies.jpg
 
 ## LAB 5: CLASSES & IDs
-<<<<<<< HEAD
-Instructions:
-=======
 Instructions: 
->>>>>>> 3bb81025af42b01fff2e808b7be0d3c56ce4bfbb
 
 1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab5 folder.
 2. The h1 is centered, but we want to also center the h4 tag that credits grandma and the paragraph with the link at the bottom of the page.
