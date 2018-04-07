@@ -79,7 +79,7 @@ Grandma wants her recipe looking good so let's add some styles:
 3. Set the font for the page to 16px and sans-serif.
 4. Style the link color as chocolate
 5. Add a solid, 15px wide, chocolate colored border around the body.
-6. The body should also have its background set to oldlace, font color set to saddlebrown.
+6. The body should also have its background set to oldlace and font color set to saddlebrown.
 7. **BONUS** Change the h1 to 40px and center align it.
 
 ## LAB 3: MORE CSS 
