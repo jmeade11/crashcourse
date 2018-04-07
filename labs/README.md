@@ -82,6 +82,17 @@ Grandma wants her recipe looking good so let's add some styles:
 6. The body should also have its background set to oldlace, font color set to saddlebrown.
 7. **BONUS** Change the h1 to 40px and center align it.
 
+## LAB MORE CSS 
+Instructions:
+
+Grandma is pretty happy, but we can do better:
+
+1. Grandma's recipe needs more work so open the the index.html and the styles.css files in the lab3 folder.
+2. The body needs 20px of space between the border and the text.
+3. Change the h1 font-size to 8% of the width of the smaller of the height or width of the viewport so it scales with the screen size!
+4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold
+5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
+
 ## LAB IMAGES
 
 Let's add an image of some delicious cookies to our recipe.
