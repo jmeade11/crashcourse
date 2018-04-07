@@ -94,17 +94,28 @@ Grandma is pretty happy, but we can do better:
 5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
 
 ## LAB IMAGES
+Instructions: 
 
 Let's add an image of some delicious cookies to our recipe.
 
+1. Grandma is pretty happy but thinks her recipe page could use some pizzaz. Open the the index.html and the styles.css files in the lab4 folder.
+2. Insert the cookie image into the page above the first heading.
+3. Set the image width to be 100% so it scales to fit the width of its container.
+
 Here's a file for you to use: https://raw.githubusercontent.com/jmeade11/crashcourse/master/Labs/Lab%20HTML/cookies.jpg
 
-## LAB COLORS & UNITS OF MEASUREMENT
+## LAB CLASSES & IDs
+Instructions: 
 
-1. Change the color of the h1 tag to **rgb(153,0,0)**
-2. Change the width of the image to **50%**
-3. Bonus: Can you figure out how to change the font used for the entire page and set it to **sans-serif**?  Hint: The property is font-family.
+1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab5 folder.
+2. The h1 is centered, but we want to also center the h4 tag that credits grandma and the paragraph with the link at the bottom of the page.
+3. Let's group each of the main areas of the recipe (ingredients, instructions, and nutrition) inside a set of section tags.
+4. Give each one a corresponding id.
 
-## LAB PORTFOLIO
+## LAB FLOATS
+Instructions:
 
-Instructions are found in the [Lab Portfolio](https://github.com/jmeade11/crashcourse/tree/master/Labs/Lab%20Portfolio) folder.
+1. Grandma says it would be a lot easier to read the recipe if you could see both the ingredients list and instructions at the same time. Let's open up the css and html files in the lab6 folder and make her happy.
+2. You'll need to set both the ingredients and instruction sections to be 50% in width and then float them both to the left, so they fit next to one another.
+3. Make sure you address the nutrition section so that it doesn't float with the other sections.
+4. Lastly, let's give the nutrition section some additional padding, but just on top! Make it 20px.
