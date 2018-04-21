@@ -1,18 +1,40 @@
-body {
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+html {
+  font: 24px sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+h1 {
+  color: yellowgreen;
 }
 
 img {
-  height: 200px;
-  width: 200px;
+  margin: 1rem 0 0 0;
 }
 
-div {
-  height: 2em;
-  width: 2em;
-  background-color: blue;
-
+header {
+  height: 10vh;
+  background-color: yellowgreen;
+  font-family: 'Gugi';
+  color: green;
+  padding: 1rem;
+  text-align: left;
 }
 
-p {
-  font-size: 2em;
+section {
+  min-height: 30vh;
+  padding-top: 2rem;
+  color: yellowgreen;
+}
+
+section:nth-child(even) {
+  background-color: yellowgreen;
+  color: white;
 }
