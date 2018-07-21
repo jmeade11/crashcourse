@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+html {
+  font: 24px sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+h1 {
+  color: yellowgreen;
+}
+
+img {
+  margin: 1rem 0 0 0;
+}
+
+header {
+  height: 10vh;
+  background-color: yellowgreen;
+  font-family: 'Gugi';
+  color: green;
+  padding: 1rem;
+  text-align: left;
+}
+
+section {
+  min-height: 30vh;
+  padding-top: 2rem;
+  color: yellowgreen;
+}
+
+section:nth-child(even) {
+  background-color: yellowgreen;
+  color: white;
+}
