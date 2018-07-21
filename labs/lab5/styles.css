@@ -1,5 +1,5 @@
 html {
-  font: 16px sans-serif;
+  font-family: sans-serif;
   background-color: moccasin;
 }
 
@@ -14,20 +14,18 @@ body {
 
 h1 {
   font-size: 8vmin;
+  text-align: center;
 }
 
 a {
   color: chocolate;
 }
 
-span {
-  font-weight: bold;
-}
-
 img {
   width: 100%;
 }
 
-.center {
-  text-align: center;
+
+#ingredients ul {
+  font-style: italic;
 }

@@ -14,6 +14,11 @@ body {
 
 h1 {
   font-size: 8vmin;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
 }
 
 a {
@@ -28,6 +33,17 @@ img {
   width: 100%;
 }
 
-.center {
-  text-align: center;
+
+#ingredients ul {
+  font-style: italic;
+}
+
+#ingredients, #instructions {
+  width: 50%;
+  float: left;
+}
+
+#nutrition {
+  clear: left;
+  padding-top: 20px;
 }

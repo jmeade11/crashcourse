@@ -103,8 +103,9 @@ Instructions:
 2. The h1 is centered, but we want to also center the h4 tag that credits grandma and the paragraph with the link at the bottom of the page.
 3. Let's group each of the main areas of the recipe (ingredients, instructions, and nutrition) inside a set of section tags.
 4. Give each section a corresponding id.
+5. Style list of ingredients with italic text (hint: Google font-style).
 
-## LAB 6: FLOATS
+## LAB 5: FLOATS
 Instructions:
 
 1. Grandma says it would be a lot easier to read the recipe if you could see both the ingredients list and instructions at the same time. Let's open up the css and html files in the lab6 folder and make her happy.
