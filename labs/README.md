@@ -75,39 +75,31 @@ Instructions:
 Grandma wants her recipe looking good so let's add some styles:
 
 1. We're going to make Grandma's cookies look better, so open the lab2 folder and use the starter index.html file.
-2. Make the background for the html element the color moccasin.
-3. Set the font for the page to 16px and sans-serif.
-4. Style the link color as chocolate
-5. Add a solid, 15px wide, chocolate colored border around the body.
-6. The body should also have its background set to oldlace and font color set to saddlebrown.
-7. **BONUS** Change the h1 to 40px and center align it.
-
-## LAB 3: MORE CSS 
-Instructions:
-
-Grandma is pretty happy, but we can do better:
-
-1. Grandma's recipe needs more work so open the the index.html and the styles.css files in the lab3 folder.
-2. The body needs 20px of space between the border and the text.
-3. Change the h1 font-size to 8% of the width of the smaller of the height or width of the viewport so it scales with the screen size!
-4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold
+2. Set the background color for the html element to the color **moccasin**.
+3. Style the link color as **chocolate**.
+4. Add a solid, 15px wide, **chocolate** colored border around the body.
+5. The body should have its background color set to **oldlace** and font color set to **saddlebrown**.
+6. The body needs **20px** of space between the border and the text (can't remember how to add space between the content and the border, look for a hint in the inspector).
+7. Change the h1 font-size 4rem.
+4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold (hint: Google the strong tag).
 5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
 
-## LAB 4: IMAGES
+## LAB 3: IMAGES
 Instructions:
 
 Let's add an image of some delicious cookies to our recipe.
 
-1. Grandma is pretty happy but thinks her recipe page could use some pizzaz. Open the the index.html and the styles.css files in the lab4 folder.
+1. Grandma is pretty happy but thinks her recipe page could use some pizzaz. Open the the index.html and the styles.css files in the lab3 folder.
 2. Insert the cookie image into the page above the first heading.
 3. Set the image width to be 100% so it scales to fit the width of its container.
+4. Set the font family for the page to be **sans-serif**.
 
-Here's a file for you to use: https://github.com/jmeade11/crashcourse/blob/master/labs/lab4/cookies.jpg?raw=true
+Here's a file for you to use: https://github.com/jmeade11/crashcourse/blob/master/labs/lab3/img/cookies.jpg?raw=true
 
-## LAB 5: CLASSES & IDs
-Instructions: 
+## LAB 4: CLASSES & IDs
+Instructions:
 
-1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab5 folder.
+1. Grandma is pretty much over-the-moon now. Let's do a few clean up tasks in our CSS and HTML. Open the index.html and styles.css files in lab4 folder.
 2. The h1 is centered, but we want to also center the h4 tag that credits grandma and the paragraph with the link at the bottom of the page.
 3. Let's group each of the main areas of the recipe (ingredients, instructions, and nutrition) inside a set of section tags.
 4. Give each section a corresponding id.

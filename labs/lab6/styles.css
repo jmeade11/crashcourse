@@ -31,3 +31,11 @@ img {
 .center {
   text-align: center;
 }
+
+#ingredients, #instructions {
+    float: left;
+    width: 50%;
+  }
+#nutrition {
+  clear: both;
+}

@@ -14,7 +14,6 @@ body {
 
 h1 {
   font-size: 8vmin;
-  text-align: center;
 }
 
 a {
@@ -27,4 +26,8 @@ span {
 
 img {
   width: 100%;
+}
+
+.center {
+  text-align: center;
 }
