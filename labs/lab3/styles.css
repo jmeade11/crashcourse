@@ -7,23 +7,14 @@ body {
   background-color: oldlace;
   color: saddlebrown;
   padding: 20px;
-  box-sizing: border-box;
-  margin: 20px;
+  margin: 40px;
 }
 
 h1 {
-  font-size: 8vmin;
+  font-size: 4rem;
   text-align: center;
 }
 
 a {
   color: chocolate;
-}
-
-span {
-  font-weight: bold;
-}
-
-img {
-  width: 100%;
 }

@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font: 16px sans-serif;
   background-color: moccasin;
 }
 
@@ -17,15 +17,22 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  text-align: center;
+}
+
 a {
   color: chocolate;
+}
+
+span {
+  font-weight: bold;
 }
 
 img {
   width: 100%;
 }
 
-
-#ingredients ul {
-  font-style: italic;
+#ingredients {
+  font-style: italic
 }

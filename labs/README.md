@@ -108,7 +108,7 @@ Instructions:
 ## LAB 5: FLOATS
 Instructions:
 
-1. Grandma says it would be a lot easier to read the recipe if you could see both the ingredients list and instructions at the same time. Let's open up the css and html files in the lab6 folder and make her happy.
+1. Grandma says it would be a lot easier to read the recipe if you could see both the ingredients list and instructions at the same time. Let's open up the css and html files in the lab5 folder and make her happy.
 2. You'll need to set both the ingredients and instruction sections to be 50% in width and then float them both to the left, so they fit next to one another.
 3. Make sure you address the nutrition section so that it doesn't float with the other sections.
 4. Lastly, let's give the nutrition section some additional padding, but just on top! Make it 20px.
