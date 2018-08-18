@@ -8,32 +8,32 @@ html, body {
 /* general sibling: All elements that are on the same level
    regardless if they are next to one another*/
 
-section ~ p {
+/*section ~ p {
   background-color: purple;
 }
 
 p {
   background-color: red;
-}
+}*/
 
 /* descendant combinator: All elements that are descendants. */
 
-section p {
+/*section p {
   background-color: hotpink;
-}
+}*/
 
 /*  adjacent sibling combinator:  All elements that are on the same
     level and are directly adjacent */
 
-section + p {
+/*section + p {
   background-color: blue;
-}
+}*/
 
 
 /*  child combinator:  All elements that are children (one level deep)*/
 
-section > p {
+/*section > p {
   background-color: yellow;
-}
+}*/
 
 
