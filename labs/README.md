@@ -66,8 +66,9 @@ Nutrition Information
 
 Probably bad for you, but who cares. MMMMMM COOKIES!!!! nom nom nom
 
+Recipe Source
 
-So, in case you didn't know, your grandma didn't actually make this recipe, it was altered from Open Source Recipe "http://www.opensourcefood.com/people/Amanori/recipes/mamas-recipe-the-best-chocolate-chip-cookies" so let's make sure to give credit where credit is due and add a link from your page.
+** So, in case you didn't know, your grandma didn't actually make this recipe, it was altered from Open Source Recipe "http://www.opensourcefood.com/people/Amanori/recipes/mamas-recipe-the-best-chocolate-chip-cookies" so let's make sure to give credit where credit is due and add a link to the original source using the Recipe Source text as the link text.
 
 ## LAB 2: CSS BASICS
 Instructions:
@@ -76,13 +77,12 @@ Grandma wants her recipe looking good so let's add some styles:
 
 1. We're going to make Grandma's cookies look better, so open the lab2 folder and use the starter index.html file.
 2. Set the background color for the html element to the color **moccasin**.
-3. Style the link color as **chocolate**.
-4. Add a solid, 15px wide, **chocolate** colored border around the body.
+3. Set the font for the page to 16px and sans-serif.
+4. Style the link color as **chocolate**.
+5. Add a solid, 15px wide, **chocolate** colored border around the body.
 5. The body should have its background color set to **oldlace** and font color set to **saddlebrown**.
-6. The body needs **20px** of space between the border and the text (can't remember how to add space between the content and the border, look for a hint in the inspector).
-7. Change the h1 font-size 4rem.
 4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold (hint: Google the strong tag).
-5. **BONUS** Can you make more of the html background-color show around the outside of the body border?
+5. **BONUS** Change the h1 to 40px and center it. Hint: Google *align text in css*.
 
 ## LAB 3: IMAGES
 Instructions:
@@ -90,9 +90,10 @@ Instructions:
 Let's add an image of some delicious cookies to our recipe.
 
 1. Grandma is pretty happy but thinks her recipe page could use some pizzaz. Open the the index.html and the styles.css files in the lab3 folder.
-2. Insert the cookie image into the page above the first heading.
-3. Set the image width to be 100% so it scales to fit the width of its container.
-4. Set the font family for the page to be **sans-serif**.
+2. Add 1rem of space between the body border and content (remember your box model :smile:).
+3. The body has a default margin of 8px.  Change that to 1rem as well.
+4. Insert the cookie image into the page above the first heading.
+5. Set the image width to be 100% so it scales to fit the width of its container.
 
 Here's a file for you to use: https://github.com/jmeade11/crashcourse/blob/master/labs/lab3/img/cookies.jpg?raw=true
 
