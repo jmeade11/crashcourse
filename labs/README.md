@@ -82,7 +82,7 @@ Grandma wants her recipe looking good so let's add some styles:
 5. Add a solid, 15px wide, **chocolate** colored border around the body.
 5. The body should have its background color set to **oldlace** and font color set to **saddlebrown**.
 4. Select just the words: "MMMMMM COOKIES!!!!" in the Nutrition Information and make them bold (hint: Google the strong tag).
-5. **BONUS** Change the h1 to 40px and center it. Hint: Google *align text in css*.
+5. **BONUS** Change the first heading on the page to use a Google Font and center it. Hint: Google *align text in css*.
 
 ## LAB 3: IMAGES
 Instructions:
