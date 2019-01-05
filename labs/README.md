@@ -77,7 +77,7 @@ Grandma wants her recipe looking good so let's add some styles:
 
 1. We're going to make Grandma's cookies look better, so open the lab2 folder and use the starter index.html file.
 2. Set the background color for the html element to the color **moccasin**.
-3. Set the font for the page to 16px and sans-serif.
+3. Set the font for the page to 18px and sans-serif.
 4. Style the link color as **chocolate**.
 5. Add a solid, 15px wide, **chocolate** colored border around the body.
 5. The body should have its background color set to **oldlace** and font color set to **saddlebrown**.
