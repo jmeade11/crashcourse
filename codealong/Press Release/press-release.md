@@ -14,4 +14,4 @@ Sydney
 Washington D.C
 
 
-For more information, visit General Assembly's
+For more information, visit General Assembly's website
